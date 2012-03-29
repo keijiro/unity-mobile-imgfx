@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: CubeMan
-  m_Shader: {fileID: 4800000, guid: 29ccb25ba052349119ca25871eac6911, type: 1}
+  m_Name: Blue Pole Unlit
+  m_Shader: {fileID: 4800000, guid: 5b62a6eb91fff42f78df44180db705cb, type: 1}
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
@@ -23,4 +23,4 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: .76119405, g: .76119405, b: .76119405, a: 1}
+        second: {r: 0, g: 0, b: 1, a: 1}

@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: BG Particle 1
-  m_Shader: {fileID: 10703, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: 29ccb25ba052349119ca25871eac6911, type: 1}
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
@@ -23,4 +23,4 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: 1, g: 1, b: 1, a: 1}
+        second: {r: .626865685, g: .626865685, b: .626865685, a: 1}
