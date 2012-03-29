@@ -183,10 +183,11 @@ GameObject:
   serializedVersion: 3
   m_Component:
   - 4: {fileID: 733782676}
-  - 111: {fileID: 733782677}
+  - 143: {fileID: 733782677}
+  - 114: {fileID: 733782678}
   m_Layer: 0
   m_Name: CubeMan
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -198,30 +199,40 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 733782675}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: .670000017, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1870674165}
   m_Father: {fileID: 0}
---- !u!111 &733782677
-Animation:
+--- !u!143 &733782677
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 733782675}
+  serializedVersion: 2
+  m_Height: 2
+  m_Radius: .5
+  m_SlopeLimit: 45
+  m_StepOffset: .300000012
+  m_SkinWidth: .0799999982
+  m_MinMoveDistance: 0
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &733782678
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 733782675}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: fe00886290edd49b69926d50c6e88a38, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: fe00886290edd49b69926d50c6e88a38, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
-  m_UserAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 689a9773a855348eab117097bacf60c4, type: 1}
+  m_Name: 
+  speed: 6
+  jumpSpeed: 8
+  gravity: 20
+  turnSpeed: 800
 --- !u!1 &896573484
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,7 +561,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1870674164}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: .075000003}
+  m_LocalPosition: {x: -0, y: .100000001, z: .150000006}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -2772,7 +2783,7 @@ GameObject:
   serializedVersion: 3
   m_Component:
   - 4: {fileID: 2044894627}
-  - 111: {fileID: 2044894628}
+  - 114: {fileID: 2044894628}
   m_Layer: 0
   m_Name: Camera Pivot
   m_TagString: Untagged
@@ -2795,21 +2806,14 @@ Transform:
   - {fileID: 896573485}
   - {fileID: 1493623310}
   m_Father: {fileID: 0}
---- !u!111 &2044894628
-Animation:
+--- !u!114 &2044894628
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2044894626}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 6b55b7471e13e4a989fe6208a1b6a658, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 6b55b7471e13e4a989fe6208a1b6a658, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
-  m_UserAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dd5cb58602664a42b07780e76c131cc, type: 1}
+  m_Name: 
+  smoothTime: .300000012

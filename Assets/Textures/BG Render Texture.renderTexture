@@ -5,7 +5,7 @@ RenderTexture:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: New Render Texture
+  m_Name: BG Render Texture
   m_Width: 512
   m_Height: 256
   m_DepthFormat: 0
