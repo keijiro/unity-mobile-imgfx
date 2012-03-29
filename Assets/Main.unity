@@ -1467,7 +1467,7 @@ Camera:
     height: 1
   near clip plane: .300000012
   far clip plane: 100
-  field of view: 45
+  field of view: 30
   orthographic: 0
   orthographic size: 100
   m_Depth: -2
@@ -1487,11 +1487,8 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4a61f8aea1c946ab84cbd234bca5801, type: 1}
   m_Name: 
-  spread: .600000024
-  alpha: 1
-  shrinkShader: {fileID: 4800000, guid: 14239222e636640cc97e28fc585b139a, type: 1}
+  spread: 1.20000005
   blurShader: {fileID: 4800000, guid: 4b221f21a55da44138465ad068eb01fc, type: 1}
-  blendShader: {fileID: 4800000, guid: a6661db6487334f1fa060d722ddc61cf, type: 1}
 --- !u!1 &925110885
 GameObject:
   m_ObjectHideFlags: 0
@@ -2173,7 +2170,7 @@ Transform:
   m_GameObject: {fileID: 1493623309}
   m_LocalRotation: {x: .00153893349, y: .7071051, z: -.7071051, w: -.00153893442}
   m_LocalPosition: {x: 0, y: 0, z: 20}
-  m_LocalScale: {x: 6, y: 5, z: 3}
+  m_LocalScale: {x: 2.5, y: 1, z: 2.5}
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
   m_Children: []
   m_Father: {fileID: 2044894627}

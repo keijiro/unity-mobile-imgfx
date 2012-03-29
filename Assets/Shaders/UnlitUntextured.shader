@@ -30,7 +30,6 @@ Shader "Custom/UnlitUntextured" {
     ENDCG
     
     SubShader {
-		Tags { "RenderType"="Opaque" }
     	ZTest LEqual
     	ZWrite on
     	Fog { Mode off }  
