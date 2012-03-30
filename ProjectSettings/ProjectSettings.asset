@@ -11,7 +11,7 @@ PlayerSettings:
   targetResolution: 0
   accelerometerFrequency: 0
   companyName: Unity Technologies Japan
-  productName: unity-mobile-image-effects
+  productName: ImageFX
   AndroidLicensePublicKey: 
   defaultScreenWidth: 1024
   defaultScreenHeight: 768
@@ -58,7 +58,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  iPhoneBundleIdentifier: jp.unity3d.mobileimageeffects
+  iPhoneBundleIdentifier: jp.unity3d.mobileimgfx
   iPhoneBundleVersion: 1.0
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 6
@@ -81,7 +81,9 @@ PlayerSettings:
   iPhoneSplashScreen: {fileID: 0}
   iPhoneHighResSplashScreen: {fileID: 0}
   iPadPortraitSplashScreen: {fileID: 0}
+  iPadHighResPortraitSplashScreen: {fileID: 0}
   iPadLandscapeSplashScreen: {fileID: 0}
+  iPadHighResLandscapeSplashScreen: {fileID: 0}
   AndroidTargetDevice: 0
   AndroidTargetGraphics: 1
   AndroidSplashScreenScale: 0

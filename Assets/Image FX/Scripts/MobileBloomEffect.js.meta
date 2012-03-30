@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: f6383c22f8aca4985b47a13d7c8f2666
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - shrinkShader: {fileID: 4800000, guid: 14239222e636640cc97e28fc585b139a, type: 1}
+  - blurShader: {fileID: 4800000, guid: 4b221f21a55da44138465ad068eb01fc, type: 1}
+  - blendShader: {fileID: 4800000, guid: 02c90db7bd1ce4f8b944fdf0714d502e, type: 1}
+  executionOrder: 0
+  icon: {instanceID: 0}

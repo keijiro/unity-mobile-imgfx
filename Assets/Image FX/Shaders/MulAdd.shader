@@ -1,4 +1,4 @@
-Shader "Custom/BlendAdd" {
+Shader "Custom FX/MulAdd" {
 	Properties {
 		_MainTex ("Blend Buffer", 2D) = "" {}
 	}

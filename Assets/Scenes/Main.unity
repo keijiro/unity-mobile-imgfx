@@ -370,7 +370,7 @@ GameObject:
   - 4: {fileID: 207241182}
   - 114: {fileID: 207241183}
   m_Layer: 0
-  m_Name: Config
+  m_Name: System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -420,10 +420,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 221396796}
-  m_LocalRotation: {x: .883234203, y: 6.74983767e-08, z: 6.74983767e-08, w: .468932152}
+  m_LocalRotation: {x: .887010813, y: 6.92840061e-08, z: 6.92840061e-08, w: .46174866}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 55.9299927, y: -180, z: -180}
+  m_LocalEulerAnglesHint: {x: 55, y: -180, z: -180}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!108 &221396798
@@ -436,7 +436,7 @@ Light:
   serializedVersion: 3
   m_Type: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: .200000003
+  m_Intensity: .165000007
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -591,7 +591,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 368447625}
   m_Layer: 0
-  m_Name: Lite Poles
+  m_Name: Light Poles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1488,6 +1488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4a61f8aea1c946ab84cbd234bca5801, type: 1}
   m_Name: 
   spread: 1.20000005
+  iteration: 2
   blurShader: {fileID: 4800000, guid: 4b221f21a55da44138465ad068eb01fc, type: 1}
 --- !u!1 &925110885
 GameObject:
@@ -2105,44 +2106,64 @@ LightProbeGroup:
   m_GameObject: {fileID: 1414868850}
   m_SourcePositions:
   - {x: 0, y: 0, z: 0}
-  - {x: .111111112, y: 0, z: 0}
-  - {x: .222222224, y: 0, z: 0}
-  - {x: .333333343, y: 0, z: 0}
-  - {x: .444444448, y: 0, z: 0}
-  - {x: .555555582, y: 0, z: 0}
-  - {x: .666666687, y: 0, z: 0}
-  - {x: .777777791, y: 0, z: 0}
-  - {x: .888888896, y: 0, z: 0}
-  - {x: 1, y: 0, z: 0}
-  - {x: 0, y: 1, z: 0}
-  - {x: .111111112, y: 1, z: 0}
-  - {x: .222222224, y: 1, z: 0}
-  - {x: .333333343, y: 1, z: 0}
-  - {x: .444444448, y: 1, z: 0}
-  - {x: .555555582, y: 1, z: 0}
-  - {x: .666666687, y: 1, z: 0}
-  - {x: .777777791, y: 1, z: 0}
-  - {x: .888888896, y: 1, z: 0}
-  - {x: 1, y: 1, z: 0}
   - {x: 0, y: 0, z: 1}
-  - {x: .111111112, y: 0, z: 1}
-  - {x: .222222224, y: 0, z: 1}
-  - {x: .333333343, y: 0, z: 1}
-  - {x: .444444448, y: 0, z: 1}
-  - {x: .555555582, y: 0, z: 1}
-  - {x: .666666687, y: 0, z: 1}
-  - {x: .777777791, y: 0, z: 1}
-  - {x: .888888896, y: 0, z: 1}
-  - {x: 1, y: 0, z: 1}
+  - {x: 0, y: 1, z: 0}
   - {x: 0, y: 1, z: 1}
-  - {x: .111111112, y: 1, z: 1}
-  - {x: .222222224, y: 1, z: 1}
-  - {x: .333333343, y: 1, z: 1}
-  - {x: .444444448, y: 1, z: 1}
-  - {x: .555555582, y: 1, z: 1}
-  - {x: .666666687, y: 1, z: 1}
-  - {x: .777777791, y: 1, z: 1}
-  - {x: .888888896, y: 1, z: 1}
+  - {x: .0714285746, y: 0, z: 0}
+  - {x: .0714285746, y: 0, z: 1}
+  - {x: .0714285746, y: 1, z: 0}
+  - {x: .0714285746, y: 1, z: 1}
+  - {x: .142857149, y: 0, z: 0}
+  - {x: .142857149, y: 0, z: 1}
+  - {x: .142857149, y: 1, z: 0}
+  - {x: .142857149, y: 1, z: 1}
+  - {x: .214285716, y: 0, z: 0}
+  - {x: .214285716, y: 0, z: 1}
+  - {x: .214285716, y: 1, z: 0}
+  - {x: .214285716, y: 1, z: 1}
+  - {x: .285714298, y: 0, z: 0}
+  - {x: .285714298, y: 0, z: 1}
+  - {x: .285714298, y: 1, z: 0}
+  - {x: .285714298, y: 1, z: 1}
+  - {x: .357142866, y: 0, z: 0}
+  - {x: .357142866, y: 0, z: 1}
+  - {x: .357142866, y: 1, z: 0}
+  - {x: .357142866, y: 1, z: 1}
+  - {x: .428571433, y: 0, z: 0}
+  - {x: .428571433, y: 0, z: 1}
+  - {x: .428571433, y: 1, z: 0}
+  - {x: .428571433, y: 1, z: 1}
+  - {x: .5, y: 0, z: 0}
+  - {x: .5, y: 0, z: 1}
+  - {x: .5, y: 1, z: 0}
+  - {x: .5, y: 1, z: 1}
+  - {x: .571428597, y: 0, z: 0}
+  - {x: .571428597, y: 0, z: 1}
+  - {x: .571428597, y: 1, z: 0}
+  - {x: .571428597, y: 1, z: 1}
+  - {x: .642857134, y: 0, z: 0}
+  - {x: .642857134, y: 0, z: 1}
+  - {x: .642857134, y: 1, z: 0}
+  - {x: .642857134, y: 1, z: 1}
+  - {x: .714285731, y: 0, z: 0}
+  - {x: .714285731, y: 0, z: 1}
+  - {x: .714285731, y: 1, z: 0}
+  - {x: .714285731, y: 1, z: 1}
+  - {x: .785714269, y: 0, z: 0}
+  - {x: .785714269, y: 0, z: 1}
+  - {x: .785714269, y: 1, z: 0}
+  - {x: .785714269, y: 1, z: 1}
+  - {x: .857142866, y: 0, z: 0}
+  - {x: .857142866, y: 0, z: 1}
+  - {x: .857142866, y: 1, z: 0}
+  - {x: .857142866, y: 1, z: 1}
+  - {x: .928571403, y: 0, z: 0}
+  - {x: .928571403, y: 0, z: 1}
+  - {x: .928571403, y: 1, z: 0}
+  - {x: .928571403, y: 1, z: 1}
+  - {x: 1, y: 0, z: 0}
+  - {x: 1, y: 0, z: 1}
+  - {x: 1, y: 1, z: 0}
   - {x: 1, y: 1, z: 1}
 --- !u!1 &1493623309
 GameObject:
@@ -2153,10 +2174,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 1493623310}
   - 33: {fileID: 1493623312}
-  - 64: {fileID: 1493623313}
   - 23: {fileID: 1493623311}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: BG Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2198,19 +2218,6 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1493623309}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!64 &1493623313
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1493623309}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_SmoothSphereCollisions: 0
-  m_Convex: 0
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1557645064
 GameObject:
@@ -2556,7 +2563,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1656327755}
   - 108: {fileID: 1656327756}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Directional light
   m_TagString: Untagged
   m_Icon: {fileID: 0}

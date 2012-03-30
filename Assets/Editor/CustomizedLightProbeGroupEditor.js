@@ -2,28 +2,27 @@
 
 @CustomEditor(LightProbeGroup)
 class CustomizedLightProbeGroupEditor extends Editor {
-	private var xCount : int;
-	private var yCount : int;
-	private var zCount : int;
+	private var dims : int[] = [8, 2, 8];
 
 	function OnEnable() {
-		xCount = 8;
-		yCount = 2;
-		zCount = 8;
 	}
 
 	function OnInspectorGUI() {
-		xCount = EditorGUILayout.IntField("Number of probes (X)", xCount);
-		yCount = EditorGUILayout.IntField("Number of probes (Y)", yCount);
-		zCount = EditorGUILayout.IntField("Number of probes (Z)", zCount);
+		EditorGUILayout.LabelField("Grid dimensions:");
+		dims[0] = EditorGUILayout.IntField("X", dims[0]);
+		dims[1] = EditorGUILayout.IntField("Y", dims[1]);
+		dims[2] = EditorGUILayout.IntField("Z", dims[2]);
 
-		if (GUILayout.Button("Recreate Probes")) {
-			var positions : Vector3[] = new Vector3[xCount * yCount * zCount];
+		if (GUILayout.Button("Replace probes")) {
+			var positions : Vector3[] = new Vector3[dims[0] * dims[1] * dims[2]];
 			var i = 0;
-			for (var x = 0; x < xCount; ++x) {
-				for (var y = 0; y < yCount; ++y) {
-					for (var z = 0; z < zCount; ++z) {
-						positions[(z * yCount + y) * xCount + x] = Vector3(1.0 * x / (xCount - 1), 1.0 * y / (yCount - 1), 1.0 * z / (zCount - 1));
+			for (var xc = 0; xc < dims[0]; ++xc) {
+				var x = 1.0 * xc / (dims[0] - 1);
+				for (var yc = 0; yc < dims[1]; ++yc) {
+					var y = 1.0 * yc / (dims[1] - 1);
+					for (var zc = 0; zc < dims[2]; ++zc) {
+						var z = 1.0 * zc / (dims[2] - 1);
+						positions[i++] = Vector3(x, y, z);
 					}
 				}
 			}

@@ -1,4 +1,4 @@
-Shader "Custom/BloomBlur" {
+Shader "Custom FX/Blur3" {
 	Properties {
 		_MainTex ("Blur Source", 2D) = "" {}
 	}

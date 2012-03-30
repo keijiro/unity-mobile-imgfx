@@ -1,4 +1,4 @@
-Shader "Custom/BloomShrink" {
+Shader "Custom FX/Quarter Shrink And Threshold" {
     Properties {
         _MainTex ("Base (RGB)", 2D) = "" {}
     }
